@@ -12,7 +12,7 @@
     
     
     
-    <title>Androidx下TabLayout使用的变化 | 零余人</title>
+    <title>hexo博客快速恢复与备份 | 零余人</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -158,19 +158,19 @@
         <i class="fa fa-home"></i>
         <a href="http://example.com">零余人</a>
         >
-        <span>Androidx下TabLayout使用的变化</span>
+        <span>hexo博客快速恢复与备份</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2021/03/26/test4/">Androidx下TabLayout使用的变化</a>
+                <a href="/2021/04/04/test6/">hexo博客快速恢复与备份</a>
             </h1>
         </div>
         <div class="tag-article">
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2021-03-26
+                <i class="fa fa-calendar"></i> 2021-04-04
             </span>
             
         </div>
@@ -180,11 +180,11 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2021/03/26/test4/">Androidx下TabLayout使用的变化</a>
+                    <a href="/2021/04/04/test6/">hexo博客快速恢复与备份</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2021-03-26
+                <i class="fa fa-calendar"></i> 2021-04-04
             </p>
             <p>
                 
@@ -193,21 +193,30 @@
         </center>
     </div>
     <div class="content-article">
-        <p>他妈的，这个傻逼东西恶心了我一下午，最后终于找到答案<br>android studio这垃圾软件兼容性差的跟狗屎一样</p>
-<h2 id="说一下具体原因"><a href="#说一下具体原因" class="headerlink" title="说一下具体原因"></a>说一下具体原因</h2><p>3.5默认强制是用androidx,以至于android support v4 和v7的包导进去同步不成功，就算关掉了默认使用的androidx，同步的时候还是会因为已经存在的androidx包而报错</p>
-<p>[h]他妈的都1202年了还有这种兼容性这么差的软件，不知道还以为是日本人做的（自己搭的博客可以随意地域嗨哈哈）[/h]</p>
-<h2 id="说一下具体的解决方案"><a href="#说一下具体的解决方案" class="headerlink" title="说一下具体的解决方案"></a>说一下具体的解决方案</h2><p><strong>在androidx项目中TabLayout在app_module对应的build.gradle中的引用如下：</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//TabLayout</span><br><span class="line">    implementation <span class="string">&#x27;com.google.android.material:material:1.2.0&#x27;</span></span><br></pre></td></tr></table></figure>
+        <p>记一下代码，方便自己快速在错误操作的时候快速恢复</p>
+<h2 id="此文章基于安装完hexo所有相关组件，替换淘宝镜像，在错误操作导致无法排错的情况下，快速回档使用"><a href="#此文章基于安装完hexo所有相关组件，替换淘宝镜像，在错误操作导致无法排错的情况下，快速回档使用" class="headerlink" title="此文章基于安装完hexo所有相关组件，替换淘宝镜像，在错误操作导致无法排错的情况下，快速回档使用"></a>此文章基于安装完hexo所有相关组件，替换淘宝镜像，在错误操作导致无法排错的情况下，快速回档使用</h2><h2 id="能掌握版本控制工具或者能排错的情况下慎重使用此方法，数据无价"><a href="#能掌握版本控制工具或者能排错的情况下慎重使用此方法，数据无价" class="headerlink" title="能掌握版本控制工具或者能排错的情况下慎重使用此方法，数据无价"></a>能掌握版本控制工具或者能排错的情况下慎重使用此方法，数据无价</h2><p>0.<br>删除自己原先hexo所在项目下的所有文件<br>删除之前先将所有文件备份</p>
+<p>1.桌面管理员模式打开cmder<br>输入 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-cli -g    (安装某些插件导致hexo最后渲染出来的网页出现问题，这里我的做法是直接卸载hexo,连同相关组件)</span><br><span class="line">or</span><br><span class="line">cnpm uninstall hexo-cli -g  </span><br></pre></td></tr></table></figure>
 
-<p><strong>而androidx项目中TabLayout在xml布局中的引用如下</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;com.google.android.material.tabs.TabLayout/&gt;</span><br></pre></td></tr></table></figure>
+<p>2.桌面管理员模式打开cmder<br>重新输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">or</span><br><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
+<p>3.在原先的hexo项目下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 
-<p><strong>至于ViewPager，可以用androidx自带的ViewPager</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;androidx.viewpager.widget.ViewPager/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">or </span><br><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">or</span><br><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p>然后就可以利用ViewPager和TabLayout实现底部Tab栏的效果<br><del>用头起飞的鸽子.jpg</del></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="至此初始化工作完成"><a href="#至此初始化工作完成" class="headerlink" title="至此初始化工作完成"></a>至此初始化工作完成</h2><h2 id="备份的迁移与恢复"><a href="#备份的迁移与恢复" class="headerlink" title="备份的迁移与恢复"></a>备份的迁移与恢复</h2><p>将原先备份文件下的<br>source<br>_config.yml<br>themes（主题文件）<br>迁移至新完成初始化的目录中，选择覆盖</p>
+<h2 id="安装主题渲染的插件（这一步要看你的主题需要什么插件，因人而异）"><a href="#安装主题渲染的插件（这一步要看你的主题需要什么插件，因人而异）" class="headerlink" title="安装主题渲染的插件（这一步要看你的主题需要什么插件，因人而异）"></a>安装主题渲染的插件（这一步要看你的主题需要什么插件，因人而异）</h2><p>这里我以我的主题为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-renderer-sass --save</span><br><span class="line">cnpm install hexo-renderer-scss --save</span><br><span class="line">cnpm install hexo-generator-json-content --save</span><br><span class="line">hexo new page <span class="string">&quot;search&quot;</span>              // 搜索功能的必须步骤</span><br><span class="line">hexo new page <span class="string">&quot;404&quot;</span>                 // 开启404页面</span><br><span class="line">以上操作都在hexo站点目录(非主题目录)下完成</span><br></pre></td></tr></table></figure>
+
+<p>然后重新执行hexo clean<br>hexo g<br>hexo s<br>可以看见渲染成功后的网页</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>github有绑定域名的网站，在恢复执行完hexo d 上传至仓库之后<br>要在自己的github仓库下重新创建CNAME文件，并在里面写上自己绑定的域名<br>不然会在访问的时候被解析到404界面<br><strong>这一步绑定域名之后每一次上传都要做</strong></p>
+<p>参考文章<br>[1]:<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/25729240">https://zhuanlan.zhihu.com/p/25729240</a><br>[2]:<a target="_blank" rel="noopener" href="https://blog.csdn.net/wapchief/article/details/54602515">https://blog.csdn.net/wapchief/article/details/54602515</a><br>[3]:<a target="_blank" rel="noopener" href="https://github.com/ZEROKISEKI/hexo-theme-gal">https://github.com/ZEROKISEKI/hexo-theme-gal</a></p>
 
     </div>
 </article>
@@ -403,17 +412,17 @@
 
                 
                 <li>
-                    <a href="/2021/03/26/test4/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2021/04/04/test6/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/03/26/test4/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2021/04/04/test6/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/2021/03/26/test4/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2021/04/04/test6/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
