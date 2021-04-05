@@ -12,7 +12,7 @@
     
     
     
-    <title>archive_a | 零余人</title>
+    <title>gridview实现九宫格 | 零余人</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -109,7 +109,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -188,19 +188,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://example.com">零余人</a>
         >
-        <span>归档</span>
+        <span>gridview实现九宫格</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2021/03/30/xuexi/gridview/">gridview实现九宫格</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2021-03-30
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -208,71 +216,30 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2021/03/30/xuexi/gridview/">gridview实现九宫格</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2021-03-30
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2021年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2021/04/05/gongju/work1/">授人以鱼不如授人以渔--简述一些我所知道的资源网站</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest3/">游戏分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest2/">漫画设定集分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest1/">动画分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/30/xuexi/gridview/">gridview实现九宫格</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/30/xuexi/viewpageDemo/">轮播图实现</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/27/xuexi/test5/">使用iftop工具查看端口流量</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/26/xuexi/test4/">Androidx下TabLayout使用的变化</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/25/xuexi/test2/">Android studio节省c盘空间方法</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/25/xuexi/test/">android 8.0以上无法使用静态广播解决方法</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p><img src="/images/test3.png"></p>
+<h2 id="MainActivity"><a href="#MainActivity" class="headerlink" title="MainActivity"></a>MainActivity</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">package com.example.gridviewdemo;</span><br><span class="line"></span><br><span class="line">import androidx.appcompat.app.AppCompatActivity;</span><br><span class="line"></span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.widget.ArrayAdapter;</span><br><span class="line">import android.widget.GridView;</span><br><span class="line">import android.widget.SimpleAdapter;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.List;</span><br><span class="line">import java.util.Map;</span><br><span class="line"></span><br><span class="line">public class MainActivity extends AppCompatActivity &#123;</span><br><span class="line">    private GridView Grid;</span><br><span class="line">    private String strs[]=&#123;<span class="string">&quot;test1&quot;</span>,<span class="string">&quot;test1&quot;</span>,<span class="string">&quot;test1&quot;</span>,<span class="string">&quot;test1&quot;</span>,<span class="string">&quot;test1&quot;</span>,<span class="string">&quot;test1&quot;</span>&#125;;</span><br><span class="line">    private  int imgs[]=&#123;</span><br><span class="line">            R.drawable.ic_launcher,R.drawable.ic_launcher,</span><br><span class="line">            R.drawable.ic_launcher,R.drawable.ic_launcher,</span><br><span class="line">            R.drawable.ic_launcher,R.drawable.ic_launcher</span><br><span class="line">    &#125;;</span><br><span class="line">    private SimpleAdapter simpleAdapter;</span><br><span class="line">    private List&lt;Map&lt;String,Object&gt;&gt; list= new ArrayList&lt;Map&lt;String,Object&gt;&gt;();</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">        super.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main);</span><br><span class="line">        getData();</span><br><span class="line">        initView();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void <span class="function"><span class="title">initView</span></span>() &#123;</span><br><span class="line">        Grid=(GridView) findViewById(R.id.Grid);</span><br><span class="line">        //新建适配器</span><br><span class="line">        String [] from =&#123;<span class="string">&quot;image&quot;</span>,<span class="string">&quot;text&quot;</span>&#125;;</span><br><span class="line">        int [] to = &#123;R.id.ItemImage,R.id.ItemText&#125;;</span><br><span class="line">        simpleAdapter = new SimpleAdapter(this, list, R.layout.iten, from, to);</span><br><span class="line">        //配置适配器</span><br><span class="line">        Grid.setAdapter(simpleAdapter);</span><br><span class="line">    &#125;</span><br><span class="line">    public List&lt;Map&lt;String, Object&gt;&gt; <span class="function"><span class="title">getData</span></span>()&#123;</span><br><span class="line">        //cion和iconName的长度是相同的，这里任选其一都可以</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;imgs.length;i++)&#123;</span><br><span class="line">            Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;();</span><br><span class="line">            map.put(<span class="string">&quot;image&quot;</span>, imgs[i]);</span><br><span class="line">            map.put(<span class="string">&quot;text&quot;</span>, strs[i]);</span><br><span class="line">            list.add(map);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> list;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="activity-layout"><a href="#activity-layout" class="headerlink" title="activity_layout"></a>activity_layout</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;RelativeLayout xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    &gt;</span><br><span class="line"></span><br><span class="line">    &lt;GridView</span><br><span class="line">        android:id=<span class="string">&quot;@+id/Grid&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">        android:verticalSpacing=<span class="string">&quot;10dp&quot;</span></span><br><span class="line">        android:columnWidth=<span class="string">&quot;90dp&quot;</span></span><br><span class="line">        android:numColumns=<span class="string">&quot;3&quot;</span></span><br><span class="line">        android:stretchMode=<span class="string">&quot;columnWidth&quot;</span></span><br><span class="line">        android:gravity=<span class="string">&quot;center&quot;</span> &gt;</span><br><span class="line">    &lt;/GridView&gt;</span><br><span class="line">&lt;/RelativeLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="iten"><a href="#iten" class="headerlink" title="iten"></a>iten</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;RelativeLayout xmlns:android=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span></span><br><span class="line">    android:layout_width=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    android:layout_height=<span class="string">&quot;match_parent&quot;</span></span><br><span class="line">    &gt;</span><br><span class="line"></span><br><span class="line">    &lt;ImageView</span><br><span class="line">        android:id=<span class="string">&quot;@+id/ItemImage&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_centerHorizontal=<span class="string">&quot;true&quot;</span></span><br><span class="line">        &gt;</span><br><span class="line">    &lt;/ImageView&gt;</span><br><span class="line"></span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:id=<span class="string">&quot;@+id/ItemText&quot;</span></span><br><span class="line">        android:layout_width=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_height=<span class="string">&quot;wrap_content&quot;</span></span><br><span class="line">        android:layout_below=<span class="string">&quot;@+id/ItemImage&quot;</span></span><br><span class="line">        android:layout_centerHorizontal=<span class="string">&quot;true&quot;</span> &gt;</span><br><span class="line">    &lt;/TextView&gt;</span><br><span class="line">&lt;/RelativeLayout&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -406,7 +373,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/04/04/dbtest1/">动画分区测试</a>
+                    <a href="/2021/04/04/dbtest2/">漫画设定集分区测试</a>
                 </span>
             </li>
             
@@ -454,13 +421,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
+                    <a href="/2021/03/27/xuexi/test5/">使用iftop工具查看端口流量</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/30/xuexi/viewpageDemo/">轮播图实现</a>
+                    <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
                 </span>
             </li>
             
@@ -475,17 +442,17 @@
 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2021/03/30/xuexi/gridview/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2021/03/30/xuexi/gridview/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2021/03/30/xuexi/gridview/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -493,11 +460,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10.688304890189785px;" class="tag-cloud-link">动画</a>
+    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10.461615996836727px;" class="tag-cloud-link">动画</a>
     
-    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 13.370372227415341px;" class="tag-cloud-link">漫画</a>
+    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 15.808052832241255px;" class="tag-cloud-link">漫画</a>
     
-    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18.834895146574347px;" class="tag-cloud-link">游戏</a>
+    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 16.562917437814026px;" class="tag-cloud-link">游戏</a>
     
 </div>
                 

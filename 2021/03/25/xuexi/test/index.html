@@ -12,7 +12,7 @@
     
     
     
-    <title>archive_a | 零余人</title>
+    <title>android 8.0以上无法使用静态广播解决方法 | 零余人</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -109,7 +109,7 @@
                 
                 
                 
-                <li class="current">
+                <li class="">
                     <a href="/archives">
                         <i class="fa fa-archive"></i>归档
                     </a>
@@ -188,19 +188,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-archive">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://example.com">零余人</a>
         >
-        <span>归档</span>
+        <span>android 8.0以上无法使用静态广播解决方法</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/archives">归档</a>
+                <a href="/2021/03/25/xuexi/test/">android 8.0以上无法使用静态广播解决方法</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2021-03-25
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -208,71 +216,39 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/archives">归档</a>
+                    <a href="/2021/03/25/xuexi/test/">android 8.0以上无法使用静态广播解决方法</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2021-03-25
+            </p>
+            <p>
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        
-        
-            <h1 style="font-size: 24px; margin-top: 40px;">2021年</h1>
-            
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-             
-             
-                        <a href="/2021/04/05/gongju/work1/">授人以鱼不如授人以渔--简述一些我所知道的资源网站</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest3/">游戏分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest2/">漫画设定集分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/dbtest1/">动画分区测试</a>
-                        <br>
-            
-             
-                        <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/30/xuexi/gridview/">gridview实现九宫格</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/30/xuexi/viewpageDemo/">轮播图实现</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/27/xuexi/test5/">使用iftop工具查看端口流量</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/26/xuexi/test4/">Androidx下TabLayout使用的变化</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/25/xuexi/test2/">Android studio节省c盘空间方法</a>
-                        <br>
-            
-             
-                        <a href="/2021/03/25/xuexi/test/">android 8.0以上无法使用静态广播解决方法</a>
-                        <br>
-            
-                    </div>
-        
+    <div class="content-article">
+        <p>静态广播</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">MyBroadcastReceiver.class</span><br><span class="line"></span><br><span class="line">package com.example.broadcasttest;</span><br><span class="line"></span><br><span class="line">import android.content.BroadcastReceiver;</span><br><span class="line">import android.content.Context;</span><br><span class="line">import android.content.Intent;</span><br><span class="line">import android.widget.Toast;</span><br><span class="line"></span><br><span class="line">public class MyBroadcastReceiver extends BroadcastReceiver &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onReceive(Context context, Intent intent) &#123;</span><br><span class="line">        // an Intent broadcast.</span><br><span class="line">        Toast.makeText(context,<span class="string">&quot;received in MyBroadcastReceiver&quot;</span>,Toast.LENGTH_SHORT).show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">在AndroidManifest中注册</span><br><span class="line"></span><br><span class="line">    &lt;receiver</span><br><span class="line">            android:name=<span class="string">&quot;.MyBroadcastReceiver&quot;</span></span><br><span class="line">            android:enabled=<span class="string">&quot;true&quot;</span></span><br><span class="line">            android:exported=<span class="string">&quot;true&quot;</span>&gt;</span><br><span class="line">            &lt;intent-filter&gt;</span><br><span class="line">                &lt;action android:name=<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>/&gt;</span><br><span class="line">            &lt;/intent-filter&gt;</span><br><span class="line">        &lt;/receiver&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">MainActivity.class</span><br><span class="line">//通过button相应点击事件来接受静态广播</span><br><span class="line"></span><br><span class="line">        Button button = (Button) findViewById(R.id.button);</span><br><span class="line">        button.setOnClickListener(new View.<span class="function"><span class="title">OnClickListener</span></span>() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public void onClick(View v) &#123;</span><br><span class="line">                Intent intent = new</span><br><span class="line">                        Intent(<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>);</span><br><span class="line">                intent.setComponent(new ComponentName(getPackageName(),</span><br><span class="line">                        <span class="string">&quot;com.example.broadcasttest.MyBroadcastReceiver&quot;</span>));</span><br><span class="line">                sendBroadcast(intent);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>值得注意的是android8.0以上的版本静态注册会出现无法使用的情况，也就是说，单纯使用    Intent intent = new<br>                        Intent(“com.example.broadcasttest.MY_BROADCAST”);将无法添加静态广播<br>所以这里引入了intent.setComponent<br>intent.setComponent的两种用法<br>intent.setComponent(new ComponentName(getPackageName(),”广播的类路径名”));<br>intent.setComponent(new ComponentName(“广播的类的报名”,”广播的类路径名”));<br>推荐使用第一种<br>注意，这里的广播类路径名值得是，接受广播的类所在的路径名</strong></p>
+<p>后续：<br>android8.0之后加大了对于静态广播的限制<br>正常的应对方式为<br>1.能动态注册，就不静态注册<br>2.如果一定要静态注册， 发送的时候指定包名，即发送显式广播（就是利用intent.setComponent）<br>3.intent.addFlags(0x01000000);</p>
+<p>要发送静态的标准广播或有序广播，前提都要使用intent.setComponent<br>多个接收器接收同一个广播并且返回toast提示时同理就要使用多个intent.setComponent，对广播接收器进行注册<br>例子：<br>标准广播使用例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new</span><br><span class="line">                      Intent(<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>);</span><br><span class="line">              intent.setComponent(new ComponentName(getPackageName(),</span><br><span class="line">                      <span class="string">&quot;com.example.broadcasttest.MyBroadcastReceiver&quot;</span>));</span><br><span class="line">              sendBroadcast(intent);</span><br><span class="line">              Intent anotherIntent = new Intent(<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>);</span><br><span class="line">              anotherIntent.setComponent(new ComponentName(<span class="string">&quot;com.example.broadcasttest2&quot;</span>, <span class="string">&quot;com.example.broadcasttest2.AnotherBroadcastReceiver&quot;</span>));</span><br><span class="line">              sendBroadcast(anotherIntent);</span><br></pre></td></tr></table></figure>
+
+<p>有序广播使用例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Intent intent = new</span><br><span class="line">              Intent(<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>);</span><br><span class="line">      intent.setComponent(new ComponentName(getPackageName(),</span><br><span class="line">              <span class="string">&quot;com.example.broadcasttest.MyBroadcastReceiver&quot;</span>));</span><br><span class="line">      sendOrderedBroadcast(intent,null);</span><br><span class="line">      Intent anotherIntent = new Intent(<span class="string">&quot;com.example.broadcasttest.MY_BROADCAST&quot;</span>);</span><br><span class="line">      anotherIntent.setComponent(new ComponentName(<span class="string">&quot;com.example.broadcasttest2&quot;</span>, <span class="string">&quot;com.example.broadcasttest2.AnotherBroadcastReceiver&quot;</span>));</span><br><span class="line">      sendOrderedBroadcast(anotherIntent,null);</span><br></pre></td></tr></table></figure>
+
+
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -406,7 +382,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/04/04/dbtest1/">动画分区测试</a>
+                    <a href="/2021/04/04/dbtest2/">漫画设定集分区测试</a>
                 </span>
             </li>
             
@@ -442,13 +418,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
+                    <a href="/2021/03/26/xuexi/test4/">Androidx下TabLayout使用的变化</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/26/xuexi/test4/">Androidx下TabLayout使用的变化</a>
+                    <a href="/2021/03/27/xuexi/test5/">使用iftop工具查看端口流量</a>
                 </span>
             </li>
             
@@ -475,17 +451,17 @@
 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/2021/03/25/xuexi/test/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/2021/03/25/xuexi/test/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 
                 
                 <li>
-                    <a href="/archives/2021/03/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/2021/03/25/xuexi/test/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
                 
             </ul>
@@ -493,11 +469,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 10.688304890189785px;" class="tag-cloud-link">动画</a>
+    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 18.884351666998096px;" class="tag-cloud-link">动画</a>
     
-    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 13.370372227415341px;" class="tag-cloud-link">漫画</a>
+    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 19.31165350317578px;" class="tag-cloud-link">漫画</a>
     
-    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18.834895146574347px;" class="tag-cloud-link">游戏</a>
+    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 8.143715052588158px;" class="tag-cloud-link">游戏</a>
     
 </div>
                 
