@@ -12,7 +12,7 @@
     
     
     
-    <title>shadowsocks搭建 | 零余人</title>
+    <title>justhost的注册以及使用 和shadowsocks搭建教程 | 零余人</title>
     <link href="http://example.com" rel="prefetch" />
 
     
@@ -128,11 +128,11 @@
                         
                         
                         <li>
-                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%8D%9A%E5%AE%A2/">学习博客</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%8D%9A%E5%AE%A2/">学习博客</a>
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
                         </li>
                         
                         
@@ -194,13 +194,13 @@
         <i class="fa fa-home"></i>
         <a href="http://example.com">零余人</a>
         >
-        <span>shadowsocks搭建</span>
+        <span>justhost的注册以及使用 和shadowsocks搭建教程</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
+                <a href="/2021/03/26/xuexi/test3/">justhost的注册以及使用 和shadowsocks搭建教程</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -216,7 +216,7 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
+                    <a href="/2021/03/26/xuexi/test3/">justhost的注册以及使用 和shadowsocks搭建教程</a>
                 </h4>
             </div>
             <p>
@@ -229,12 +229,22 @@
         </center>
     </div>
     <div class="content-article">
-        <p>##一键安装SS</p>
+        <p>##文章参考，不全之处可以参考一下文章<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/102511030">JustHost注册及使用教程</a><br><a target="_blank" rel="noopener" href="https://github.com/WangZeyu9965/vps">超详细国外VPS搭建教程</a></p>
+<h2 id="justhost-的注册以及虚拟主机购买"><a href="#justhost-的注册以及虚拟主机购买" class="headerlink" title="justhost 的注册以及虚拟主机购买"></a>justhost 的注册以及虚拟主机购买</h2><p>justhost,是一家来自于俄罗斯的主机商，其价格相对较低，最低配置目前是109卢布，算上支付宝的汇率每月应该是11元<br>justhost的莫斯科机房，而且针对中国线路进行了优化，配合自己手动配置的bbr算法优化，延迟也很低<br>网址[1]:<a target="_blank" rel="noopener" href="https://justhost.ru/?ref=45105">https://justhost.ru/?ref=45105</a>                 （支持裸连，就是裸连会有点卡）<br>建议使用chrome打开上面的网址，配合翻译使用</p>
+<p><img src="/images/test4.png"><br>点击红圈注册用户</p>
+<p>注册用户<br><img src="/images/test6.png"><br><img src="/images/test5.png"></p>
+<p>输入邮箱（可使用qq邮箱）<br><img src="/images/test7.png"></p>
+<p>注册完打开邮箱可以看到圈起来和遮住的三个地方分别是<br>用户登录界面<br>登录用的邮箱<br>还有登录的密码（要注意的是，初次登录的密码是系统分配的，后期可以自己修改）<br><img src="/images/test8.png"><br><img src="/images/test9.png"></p>
+<p>点击邮箱中的登录界面重新登录<br>分别输入刚才注册的邮箱和登录密码<br><img src="/images/test10.png"></p>
+<p>登录后返回界面<br>点击vps一栏<br><img src="/images/test11.png"></p>
+<p>一般选择配置最低的hdd vps<br>点击<br><img src="/images/test12.png"></p>
+<p>此界面选择配置<br>前面的数据基本不用改，这一栏可以选择购买多久，分别是1，3，6，12<br><img src="/images/test14.png"><br>拉到最底下<br>只改最后一项，选择DataLine (Tier-3, Moscow)<br><img src="/images/test13.png"><br>选择购买<br><img src="/images/test15.png"></p>
+<p>待付款选项<br><img src="/images/test16.png"><br><img src="/images/test17.png"><br>支付<br><img src="/images/test18.png"><br>选择支付宝<br><img src="/images/test19.png"><br>购买成功后大概半个小时后会在邮箱中收到虚拟机的ip账号密码<br><img src="/images/test20.png"><br>可以使用SecureCRT或者xhell输入ip root 和密码可以登录<br><img src="/images/test21.png"></p>
+<h2 id="至此justhost-的注册以及虚拟主机购买完成"><a href="#至此justhost-的注册以及虚拟主机购买完成" class="headerlink" title="至此justhost 的注册以及虚拟主机购买完成"></a>至此justhost 的注册以及虚拟主机购买完成</h2><h2 id="接下来就是shadowsocks的搭建，基本上就是代码的复制黏贴，分为基础和bbr优化加速两个部分"><a href="#接下来就是shadowsocks的搭建，基本上就是代码的复制黏贴，分为基础和bbr优化加速两个部分" class="headerlink" title="接下来就是shadowsocks的搭建，基本上就是代码的复制黏贴，分为基础和bbr优化加速两个部分"></a>接下来就是shadowsocks的搭建，基本上就是代码的复制黏贴，分为基础和bbr优化加速两个部分</h2><p>具体参考<a target="_blank" rel="noopener" href="https://github.com/WangZeyu9965/vps">超详细国外VPS搭建教程</a><br>这里只写出了安装所需的代码<br>登录服务器之后，我们就可以开始安装ss了，复制以下命令到远程连接中执行。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocks.sh</span><br><span class="line"></span><br><span class="line">./shadowsocks.sh 2&gt;&amp;1 | tee shadowsocks.log</span><br></pre></td></tr></table></figure>
-
-<p>##bbr算法优化加速</p>
-<p>查看内核</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname –a</span><br></pre></td></tr></table></figure>
+<p>执行命令后过一会提示你输入输入SS的密码，端口和加密方式<br><img src="/images/test22.jpg"><br>点回车之后会提示你让你再按一遍回车确定，然后出现ss信息，记得复制出来妥善保存。<br><img src="/images/test23.png"><br>到此ss的安装教程就结束了。</p>
+<h2 id="bbr算法优化加速，此方法可以提升网速，可做可不做"><a href="#bbr算法优化加速，此方法可以提升网速，可做可不做" class="headerlink" title="bbr算法优化加速，此方法可以提升网速，可做可不做"></a>bbr算法优化加速，此方法可以提升网速，可做可不做</h2><p>查看内核</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">uname –a</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>如果内核版本小于4.9则需要更新内核</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm</span><br><span class="line">yum --enablerepo=elrepo-kernel install kernel-ml –y</span><br></pre></td></tr></table></figure>
 <p>查看内核版本</p>
@@ -254,6 +264,11 @@
 <p>执行 lsmod | grep bbr, 看到有 tcp_bbr 模块即说明 bbr 已启动</p>
 <p>bbr启动之后重启服务更新pac应该就有效果了</p>
 <p>挂着看管人还行</p>
+<p>有了shadowsocks的账号和密码的之后，下载v2rayng软件使用<br>下载<br><a target="_blank" rel="noopener" href="https://xbsj9639.club/download/v2rayN-win-with-trojan-v2.zip">https://xbsj9639.club/download/v2rayN-win-with-trojan-v2.zip</a></p>
+<p>下载完后解压即可运行<br>选择添加shadowsocks服务器<br><img src="/images/test24.png"><br>此处的服务器地址端口密码参考（别名随便填，英文就行）<br>如图<br><img src="/images/test25.png"><br><img src="/images/test23.png"></p>
+<p>添加完后选择代理方式，这里一般是pac<br><img src="/images/test26.png"></p>
+<p>然后选择更新pac<br><img src="/images/test27.png"></p>
+<p>大功告成，开始网上冲浪了</p>
 
     </div>
 </article>
@@ -370,7 +385,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
+                    <a href="/2021/03/26/xuexi/test3/">justhost的注册以及使用 和shadowsocks搭建教程</a>
                 </span>
             </li>
             
@@ -398,7 +413,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/04/05/gongju/work1/">授人以鱼不如授人以渔--简述一些我所知道的资源网站</a>
+                    <a href="/2021/04/04/dbtest3/">游戏分区测试</a>
                 </span>
             </li>
             
@@ -416,7 +431,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/25/xuexi/test2/">Android studio节省c盘空间方法</a>
+                    <a href="/2021/03/26/xuexi/test3/">justhost的注册以及使用 和shadowsocks搭建教程</a>
                 </span>
             </li>
             
@@ -428,7 +443,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2021/03/26/xuexi/test3/">shadowsocks搭建</a>
+                    <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2021/04/05/gongju/work1/">授人以鱼不如授人以渔--简述一些我所知道的资源网站</a>
                 </span>
             </li>
             
@@ -441,12 +462,6 @@
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/2021/03/30/xuexi/viewpageDemo/">轮播图实现</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2021/04/04/xuexi/test6/">hexo博客快速恢复与备份</a>
                 </span>
             </li>
             
@@ -479,11 +494,11 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 17.677335189998505px;" class="tag-cloud-link">动画</a>
+    <a href="/tags/%E5%8A%A8%E7%94%BB/" style="font-size: 17.71152100489973px;" class="tag-cloud-link">动画</a>
     
-    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 16.594668561340114px;" class="tag-cloud-link">漫画</a>
+    <a href="/tags/%E6%BC%AB%E7%94%BB/" style="font-size: 12.012067638935546px;" class="tag-cloud-link">漫画</a>
     
-    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 18.045342948645153px;" class="tag-cloud-link">游戏</a>
+    <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 10.168004903590559px;" class="tag-cloud-link">游戏</a>
     
 </div>
                 
